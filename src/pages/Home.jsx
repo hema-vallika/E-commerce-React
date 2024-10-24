@@ -5,7 +5,7 @@ import InfoSection from "../components/InfoSection"
 import CategorySection from "../components/CategorySection";
 import { setproducts } from "../redux/ProductSlice";
 import {useSelector,useDispatch} from 'react-redux';
-import Productcard from "../components/Productcard";
+import Productcard from "../components/ProductCard";
 import Shop from "./Shop";
 
 
