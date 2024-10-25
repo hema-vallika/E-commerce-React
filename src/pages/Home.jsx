@@ -25,7 +25,7 @@ function Home() {
   return (
     <div className="bg-white mt-2 px-4  md:px-16 lg:px-24">
       
-      <div className=" mx-auto py-4 h-[90vh] md:h-[400px] lg:h-[500px] flex flex-col md:flex-row space-x-2">
+      <div className=" mx-auto py-4 h-[110vh] md:h-[400px] lg:h-[500px] flex flex-col md:flex-row space-x-2">
         <div className="w-full md:w-3/12">
           <div className="bg-red-600 text-white text-xs font-bold px-2 py-2.5 rounded-full text-center uppercase">SHOP BY CATEGORIES</div>
           <ul className="space-y-4 bg-gray-200 mt-[1.5px] p-3 border  rounded-lg text-left">
