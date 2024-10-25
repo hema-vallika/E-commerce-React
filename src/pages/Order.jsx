@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 const Order = ({order}) => {
     const navigate = useNavigate()
+    console.log(order);
+    
   return (
     <div className='container mx-auto py-8 px-4 md:px-16 lg:px-24'>
         <h2 className='text-2xl font-semibold mb-4'>Thank You for your Order</h2>
