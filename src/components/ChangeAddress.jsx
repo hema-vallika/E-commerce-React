@@ -10,7 +10,7 @@ const ChangeAddress = ({setAddress,setIsModelOpen}) => {
     <div>
         <input type="text" placeholder='Enter new Address' className='border p-2 w-full mb-4'
         onChange={(e) => setNewAddress(e.target.value)}/>
-        {console.log(newAddress)}
+        {/* {console.log(newAddress)} */}
         
         <div className='flex justify-end'>
             <button className='bg-gray-500 text-white py-2 px-4 rounded mr-2'
