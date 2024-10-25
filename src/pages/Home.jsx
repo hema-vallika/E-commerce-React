@@ -6,7 +6,8 @@ import CategorySection from "../components/CategorySection";
 import { setproducts } from "../redux/ProductSlice";
 import {useSelector,useDispatch} from 'react-redux';
 import Shop from "./Shop";
-import Productcard from "../components/Productcard";
+import ProductCard from "../components/ProductCard";
+
 
 
 
@@ -59,7 +60,7 @@ function Home() {
         <h2 className="text-2xl font-bold mb-6 text-center shadow-md">Top Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 cursor-pointer ">
           {products.products.slice(0,5).map(((product) => (
-            <Productcard product={product}/>
+            <ProductCard product={product}/>
           )))}
         </div>
       </div>
