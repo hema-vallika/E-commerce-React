@@ -9,18 +9,18 @@ const Order = ({order}) => {
         <p>Your Order has been placed successfully .</p>
         <div className='mt-6 p-4 border rounded-lg bg-gray-100'>
             <h3 className='text-lg font-semibold mb-2'>Order Summary</h3>
-            <p>Order Number: {order.orderNumber}</p>
+            <p>Order Number: {order?.orderNumber}</p>
             <div className='mt-4'>
                 <h2 className='text-md font-semibold mb-2'>Shipping Information</h2>
-                <p>{order.shippingInformation.address}</p>
-                <p>{order.shippingInformation.city}</p>
-                <p>{order.shippingInformation.zip}</p>
+                <p>{order?.shippingInformation.address}</p>
+                <p>{order?.shippingInformation.city}</p>
+                <p>{order?.shippingInformation.zip}</p>
                 
             </div>
             <div className='mt-4'>
                 <h3 className='text-md font-semibold mb-2'>Items Ordered</h3>
-                {order.products.map(product => (
-                    <div>
+                {order?.products.map(product => (
+                    <div key={product.id}>
                         <p>{product.name } * {product.quantity}</p>
                         <p>${product.price * product.quantity}</p>
                     </div>
@@ -29,7 +29,7 @@ const Order = ({order}) => {
             </div>
             <div className='mt-4 flex justify-start'>
                 <span>Total Price:</span>
-                <span className='font-semibold'>${order.totalPrice.toFixed(2)}</span>
+                <span className='font-semibold'>${order?.totalPrice.toFixed(2)}</span>
             </div>
             </div>
             <div className='mt-6'>

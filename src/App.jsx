@@ -9,6 +9,7 @@ import { useState } from "react"
 import Order from "./pages/Order"
 import FilterData from "./pages/FilterData"
 import ProductDetail from "./pages/ProductDetail"
+import  { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -31,9 +32,11 @@ function App() {
 
 
       </Routes>
+      
     <Footer/>  
-   
+    <Toaster />
    </BrowserRouter>
+     
   )
 }
 
