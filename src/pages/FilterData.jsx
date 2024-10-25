@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Productcard from "../components/Productcard";
+import ProductCard from "../components/ProductCard";
 
 const FilterData = () => {
   const filterProducts = useSelector((state) => state.product.filterData);
@@ -13,7 +13,7 @@ const FilterData = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 cursor-pointer ">
             {filterProducts.map((product) => (
-              <Productcard product={product} />
+              <ProductCard product={product} />
             ))}
           </div>
         </>
